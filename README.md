@@ -13,13 +13,13 @@ It follows the normal pattern of rules from a poker game.
 
 ## Some images from the game 
 
-Login image<br/>
+###Login image<br/>
 ![Login](https://github.com/dariish/PokerFx/blob/main/images/Screenshot_4.png)
 <br/>
-A first look once both players login<br/>
+###A first look once both players login<br/>
 ![firstLook](https://github.com/dariish/PokerFx/blob/main/images/Screenshot_1.png)
 <br/>
-Middle game status<br/>
+###Middle game status<br/>
 ![SecondLook](https://github.com/dariish/PokerFx/blob/main/images/Screenshot_2.png)
 
 
