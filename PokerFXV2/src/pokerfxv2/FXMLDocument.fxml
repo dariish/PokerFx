@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #19282F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokerfxv2.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="anchorGame" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #050F1B;" visible="false">
+         <children>
+            <Pane fx:id="paneGame" layoutY="6.0" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
+               <children>
+                  <Pane layoutY="140.0" prefHeight="475.0" prefWidth="1024.0" style="-fx-background-color: #44742D;">
+                     <children>
+                        <ImageView fitHeight="68.0" fitWidth="391.0" layoutX="317.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/ECGM3.png" />
+                           </image>
+                        </ImageView>
+                        <ProgressBar fx:id="progressBarTime" layoutY="461.0" prefHeight="18.0" prefWidth="1024.0" progress="1.0" style="-fx-accent: #DB4B2B;" />
+                        <ImageView fx:id="imageP2Card2" fitHeight="248.0" fitWidth="107.0" layoutX="903.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/cardImg/default.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imageP2Card1" fitHeight="248.0" fitWidth="107.0" layoutX="784.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/cardImg/default.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="tablePontsLbl" layoutX="493.0" layoutY="324.0" text="P Bet" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imageTCard2" fitHeight="248.0" fitWidth="107.0" layoutX="342.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/cardImg/default.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imageTCard1" fitHeight="248.0" fitWidth="107.0" layoutX="227.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/cardImg/default.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imageTCard3" fitHeight="248.0" fitWidth="107.0" layoutX="458.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/cardImg/default.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imageTCard4" fitHeight="248.0" fitWidth="107.0" layoutX="573.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/cardImg/default.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imageTCard5" fitHeight="248.0" fitWidth="107.0" layoutX="689.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/cardImg/default.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="lblNotification" fill="WHITE" layoutX="32.0" layoutY="90.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="1.5" text="alguem Fez algo que vai aparecer">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Text>
+                        <Pane fx:id="panelFimRonda" layoutX="32.0" layoutY="21.0" prefHeight="123.0" prefWidth="613.0" style="-fx-background-color: #050F1B; -fx-border-color: #DB4B2B;">
+                           <children>
+                              <Text fx:id="textFimRonda" fill="WHITE" layoutX="3.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fim de Ronda" textAlignment="CENTER" wrappingWidth="606.7548828125">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Text>
+                           </children></Pane>
+                     </children></Pane>
+                  <Button fx:id="btnSairGame" layoutX="56.0" layoutY="46.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="43.0" prefWidth="107.0" style="-fx-background-color: #3A4C66;" text="Sair" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Pane layoutX="629.0" layoutY="-5.0" prefHeight="144.0" prefWidth="139.0" style="-fx-background-color: #DB4B2B;">
+                     <children>
+                        <Label layoutX="34.0" layoutY="9.0" text="Créditos" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="labelP2Credits" fill="WHITE" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="570" textAlignment="CENTER" wrappingWidth="139.0">
+                           <font>
+                              <Font name="System Bold" size="42.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="p2BetLbl" layoutX="-7.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P Bet" textAlignment="CENTER" wrappingWidth="147.0">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="246.0" layoutY="619.0" prefHeight="144.0" prefWidth="139.0" style="-fx-background-color: #DB4B2B;">
+                     <children>
+                        <Label layoutX="34.0" layoutY="103.0" text="Créditos" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="labelP1Credits" fill="WHITE" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="970" textAlignment="CENTER" wrappingWidth="139.0">
+                           <font>
+                              <Font name="System Bold" size="45.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="p1BetLbl" layoutX="-2.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P Bet" textAlignment="CENTER" wrappingWidth="139.0">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="btnCall" layoutX="703.0" layoutY="664.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleCallAction" prefHeight="50.0" prefWidth="139.0" style="-fx-background-color: #DB4B2B;" text="Call 20" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnFold" layoutX="856.0" layoutY="664.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleFoldAction" prefHeight="50.0" prefWidth="139.0" style="-fx-background-color: #DB4B2B;" text="Fold" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRaise" layoutX="549.0" layoutY="664.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRaiseAction" prefHeight="50.0" prefWidth="139.0" style="-fx-background-color: #DB4B2B;" text="Raise 100" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtFieldBet" alignment="CENTER" layoutX="415.0" layoutY="686.0" prefHeight="0.0" prefWidth="107.0" style="-fx-background-color: #0C1317; -fx-border-color: #DB4B2B; -fx-text-fill: #ffffff;" text="20">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="invalidLbl" layoutX="415.0" layoutY="660.0" text="Valor inválido" textFill="#b33030">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="txtArea" layoutX="229.0" layoutY="-5.0" prefHeight="144.0" prefWidth="366.0" style="-fx-background-color: #19282F; -fx-border-color: #19282F;" />
+                  <ImageView fx:id="imageP1Card1" fitHeight="248.0" fitWidth="107.0" layoutX="11.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/cardImg/00.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imageP1Card2" fitHeight="248.0" fitWidth="107.0" layoutX="126.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/cardImg/00.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="labelPlayer1" fill="WHITE" layoutX="18.0" layoutY="726.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Utilizador 1" textAlignment="CENTER" wrappingWidth="212.13671875">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="labelPlayer2" fill="WHITE" layoutX="783.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Utilizador 2" textAlignment="CENTER" wrappingWidth="224.765625">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorMenu" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #050F1B;">
+         <children>
+            <Pane fx:id="paneMenu" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="btnSair" layoutX="25.0" layoutY="25.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #3A4C66;" text="Sair" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="28.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="50.0" fitWidth="251.0" layoutX="741.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/ECGM3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="223.0" fitWidth="368.0" layoutX="339.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="userTxtField" alignment="CENTER" layoutX="367.0" layoutY="451.0" promptText="Utilizador" style="-fx-background-color: #0C1317; -fx-border-color: #D74828;">
+                     <font>
+                        <Font name="Arial Bold" size="23.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnPlay" contentDisplay="CENTER" layoutX="367.0" layoutY="526.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlePlayAction" prefHeight="62.0" prefWidth="291.0" style="-fx-background-color: #D74828;" text="Jogar" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="33.0" />
+                     </font>
+                  </Button>
+                  <Pane fx:id="paneFading" opacity="0.8" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #19282F;" visible="false" />
+                  <Pane fx:id="paneWaiting" layoutX="266.0" layoutY="326.0" prefHeight="117.0" prefWidth="491.0" style="-fx-border-color: #D74828; -fx-background-color: #050F1B; -fx-border-width: 6;" visible="false">
+                     <children>
+                        <Label layoutX="35.0" layoutY="35.0" text="À espera de outro jogador..." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label fx:id="lblWarning" layoutX="317.0" layoutY="414.0" text="Nome inválido! (entre 1 - 8 caracteres)" textFill="#b33030">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorFimJogo" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #050F1B;" visible="false">
+         <children>
+            <Pane fx:id="paneMenu1" prefHeight="768.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="251.0" layoutX="37.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/ECGM3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="154.0" fitWidth="291.0" layoutX="43.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnSairEnd" contentDisplay="CENTER" layoutX="37.0" layoutY="628.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="62.0" prefWidth="291.0" style="-fx-background-color: #D74828;" text="Sair" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="33.0" />
+                     </font>
+                  </Button>
+                  <Pane fx:id="paneFading1" opacity="0.8" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #19282F;" visible="false" />
+                  <Pane fx:id="paneWaiting1" layoutX="266.0" layoutY="326.0" prefHeight="117.0" prefWidth="491.0" style="-fx-border-color: #D74828; -fx-background-color: #050F1B; -fx-border-width: 6;" visible="false">
+                     <children>
+                        <Label layoutX="35.0" layoutY="35.0" text="À espera de outro jogador..." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Text fx:id="txtEndGame" fill="WHITE" layoutX="343.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O alguem ganhou o jogo com algo" textAlignment="CENTER" wrappingWidth="666.19140625">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="txtAreaHistory" layoutX="438.0" layoutY="78.0" prefHeight="491.0" prefWidth="477.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></TextArea>
+                  <Text fill="WHITE" layoutX="43.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Criadores:" wrappingWidth="290.501953125">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#d74828" layoutX="43.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jorge Pereira 18154" wrappingWidth="290.501953125">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#d74828" layoutX="43.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiago Santos 18024" wrappingWidth="290.501953125">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
