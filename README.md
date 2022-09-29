@@ -12,11 +12,14 @@ It follows the normal pattern of rules from a poker game.
 ⚡️ Plays and games history.
 
 ## Some images from the game 
+
+Login image
 ![Login](https://github.com/dariish/PokerFx/blob/main/images/Screenshot_4.png)
 
+A first look once both players login
+![firstLook](https://github.com/dariish/PokerFx/blob/main/images/Screenshot_1.png)
 
-!Login(https://github.com/dariish/PokerFx/blob/main/images/Screenshot_4.png)
-!first Look(https://github.com/dariish/PokerFx/blob/main/images/Screenshot_1.png)
-!Second look(https://github.com/dariish/PokerFx/blob/main/images/Screenshot_2.png)
+Middle game status
+![SecondLook](https://github.com/dariish/PokerFx/blob/main/images/Screenshot_2.png)
 
 
